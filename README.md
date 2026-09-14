@@ -1,57 +1,53 @@
-# Minecraft Server — Oracle Cloud + Cloudflare
+# 🎮 Minecraft Server - Oracle Cloud + Cloudflare
 
-Projeto pessoal de infraestrutura desenvolvido para hospedar um servidor de Minecraft utilizando uma instância da **Oracle Cloud**, com configuração de domínio e gerenciamento de DNS através da **Cloudflare**.
+Projeto pessoal de infraestrutura desenvolvido para hospedar um servidor de Minecraft utilizando **Oracle Cloud**, **Ubuntu Linux** e **Cloudflare DNS**, com domínio próprio.
 
-## 🎯 Objetivo
+## 🛠️ Tecnologias e serviços
 
-Hospedar um servidor de Minecraft acessível pela Internet utilizando uma infraestrutura própria em cloud, realizando a configuração do servidor, domínio, rede e resolução DNS.
+| Tecnologia / Serviço | Utilização |
+|---|---|
+| **Oracle Cloud Infrastructure (OCI)** | Hospedagem da máquina virtual |
+| **Ubuntu Linux** | Sistema operacional da instância |
+| **Cloudflare** | Gerenciamento de DNS |
+| **DNS** | Resolução do domínio |
+| **Java** | Ambiente de execução do servidor Minecraft |
+| **SSH** | Acesso remoto à instância |
+| **Minecraft Server** | Serviço hospedado |
 
 ## 🏗️ Arquitetura
 
-```text
+![Arquitetura da infraestrutura](docs/Arquitetura.png)
 
-```
-
-## ☁️ Tecnologias e serviços
-
-* Oracle Cloud Infrastructure (OCI)
-* Cloudflare
-* DNS
-* Linux
-* Minecraft Server
-* Java
-* SSH
+A Cloudflare é utilizada para gerenciamento e resolução do DNS, enquanto o servidor de Minecraft é executado diretamente em uma instância Linux da Oracle Cloud.
 
 ## 🔧 O que foi realizado
 
-* Criação e configuração de uma instância na Oracle Cloud;
-* Configuração do ambiente para execução do servidor;
-* Instalação e configuração do servidor de Minecraft;
-* Configuração de rede e acesso ao servidor;
-* Registro e configuração de domínio;
-* Configuração de DNS utilizando Cloudflare;
-* Associação do domínio à infraestrutura do servidor;
-* Testes de conectividade e acesso externo.
+- Criação e configuração de uma instância na Oracle Cloud;
+- Configuração do Ubuntu e acesso remoto via SSH;
+- Instalação e configuração do servidor de Minecraft;
+- Configuração de rede e portas;
+- Registro e configuração do domínio;
+- Configuração do DNS através da Cloudflare;
+- Testes de conectividade e acesso externo.
 
-## 🌐 Resultado
+## ☁️ Infraestrutura
 
-Infraestrutura funcional com servidor de Minecraft hospedado na **Oracle Cloud**, utilizando **domínio próprio** e **Cloudflare** para gerenciamento de DNS.
+![Oracle Cloud](docs/OracleCloud.png)
 
-O endereço do servidor e as informações de acesso não são divulgados publicamente.
+A infraestrutura utiliza uma instância Linux hospedada na Oracle Cloud para executar o servidor de Minecraft.
 
+## 🌐 DNS
 
-## 📚 Conhecimentos aplicados
+![Cloudflare DNS](docs/Cloudflare.png)
 
-O projeto proporcionou experiência prática com:
+O domínio foi configurado utilizando a Cloudflare para gerenciamento dos registros DNS e direcionamento para a infraestrutura hospedada na Oracle Cloud.
 
-* Cloud computing;
-* Administração de servidores;
-* Redes e portas;
-* DNS;
-* Gerenciamento de domínio;
-* Configuração de serviços;
-* Troubleshooting de infraestrutura.
+## 🔒 Segurança
+
+Informações como domínio, IP, credenciais e outros dados sensíveis foram ocultadas das imagens e não estão presentes no repositório.
 
 ## 📌 Status
 
-Projeto pessoal concluído.
+**Projeto pessoal concluído.**
+
+Experiência prática com **cloud computing, servidores Linux, redes, DNS e troubleshooting**.
